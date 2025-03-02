@@ -1,0 +1,26 @@
+{
+  "name": "photo-ai-backend",
+  "version": "1.0.0",
+  "description": "photo generator",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon --exec ts-node --transpile-only index.ts",
+    "dev": "nodemon --exec ts-node --transpile-only index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.8",
+    "common": "*",
+    "db": "*",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
