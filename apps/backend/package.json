@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "photo generator",
   "main": "index.ts",
+  "type": "module",
   "scripts": {
-    "start": "nodemon --exec ts-node --transpile-only index.ts",
-    "dev": "nodemon --exec ts-node --transpile-only index.ts",
+    "start": "node --loader ts-node/esm index.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm index.ts",
     "build": "tsc"
   },
   "author": "",

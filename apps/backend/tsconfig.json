@@ -1,10 +1,15 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "CommonJS",
-    "rootDir": "./",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "rootDir": "../../",
     "outDir": "dist",
     "strict": true,
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "composite": true
+  },
+  "references": [
+    { "path": "../../packages/common" }
+  ]
 }
